@@ -1,0 +1,17 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.custom-uppy-dashboard .uppy-Dashboard-inner {
+  width: 400px !important;
+  height: 260px !important;
+}
+
+.custom-uppy-dashboard .uppy-Dashboard-Item-preview {
+  width: 150px !important;
+  height: auto !important;
+}
+.custom-uppy-dashboard .uppy-Dashboard-AddFiles-title {
+  margin-top: 6rem !important;
+}

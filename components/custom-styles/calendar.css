@@ -1,0 +1,84 @@
+/* Ensure the calendar stretches across the full width */
+.calendar-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.react-calendar {
+  width: 100%;
+  max-width: 1200px; /* Optional: Set a max width for better readability */
+  border: none;
+  padding: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 53vh;
+}
+.react-calendar__tile {
+  text-align: center;
+  font-size: 1rem;
+}
+/*.react-calendar__tile--active {
+  background-color: #f85f14;
+  color: white;
+}
+.react-calendar__tile--now {
+  background-color: #006edc;
+  color: white;
+}*/
+.react-calendar__tile--now {
+  background: #e6e6e6;
+  color: #f85f14;
+}
+
+.event-title {
+  font-size: 0.8rem;
+  color: #f85f14;
+  /*background: #a9d4ff;*/
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #006edc;
+}
+.react-calendar__navigation button {
+  font-size: 1.2rem;
+}
+.selected-date {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+.react-calendar__month-view__days {
+  height: 35vh;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 415px;
+  text-align: center;
+  position: relative;
+}
+.modal-overlay .close {
+  margin-right: -90%;
+}
+.modal-overlay .close span {
+  font-size: 1.5rem;
+}
+.modal-overlay .modal-header {
+  font-size: 1.5rem;
+}
